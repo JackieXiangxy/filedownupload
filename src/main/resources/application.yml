@@ -1,0 +1,28 @@
+#端口设置
+server:
+  port: 8080
+
+#数据源配置
+spring:
+  application: filedownupload
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/filetest?useSSL=true
+    username: root
+    password: admin
+
+#  mvc:
+#    view:
+#      prefix: classpath:/view/
+#      suffix: .html
+  thymeleaf:
+     prefix: classpath:/static/
+
+debug: true
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.jackie.myapp.model
+#  config-location
+
