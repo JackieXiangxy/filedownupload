@@ -3,6 +3,8 @@ package com.jackie.myapp.controller;
 import com.alibaba.fastjson.JSON;
 import com.jackie.myapp.model.Fileinfo;
 import com.jackie.myapp.server.FileInfoServer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +17,10 @@ import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController("file")
+@RestController
+@RequestMapping("file")
 public class FileController {
+    private final static Logger log= LoggerFactory.getLogger(FileController.class);
 
 
     @PostMapping("updaload")

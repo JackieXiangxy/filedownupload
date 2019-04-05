@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"ng-app="login">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
 </head>
-<body>
+<body ng-controller="loginBody">
 
 <form method="post" enctype="multipart/form-data" action="batch">
     <p>文件1：<input type="file" name="file"/></p>
     <p>文件2：<input type="file" name="file"/></p>
     <p><input type="submit" value="上传"/></p>
 </form>
+
+<script src="js/login.js" type="text/javascript"></script>
+
 </body>
 </html>
