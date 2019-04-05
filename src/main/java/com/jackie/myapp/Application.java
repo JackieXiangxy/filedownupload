@@ -1,6 +1,9 @@
 package com.jackie.myapp;
 
+import com.jackie.myapp.controller.FileController;
 import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
@@ -17,6 +20,7 @@ import java.util.List;
 @SpringBootApplication(exclude = MongoAutoConfiguration.class)
 @MapperScan("com.jackie.myapp.mapper")
 public class Application extends SpringBootServletInitializer {
+    private final static Logger log= LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
