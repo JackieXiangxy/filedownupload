@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="login">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
-<body ng-controller="loignController">
+<body ng-controller="loignController"  ng-app="login">
 
 
 <div class="container title">
@@ -16,15 +16,14 @@
 
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8">
-                <h1 class="text-center"style="color: green">
-                    这是登陆模块
+                <h1 class="text-center"style="color: red">
+                    登陆
                 </h1>
 
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2">
 
             </div>
-
 
         </div>
 
@@ -43,22 +42,15 @@
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2"></div>
 
-
         </div>
 
     </div>
 </div>
 
-
-<!--<form method="post" enctype="multipart/form-data" action="batch">
-    <p>文件1：<input type="file" name="file"/></p>
-    <p>文件2：<input type="file" name="file"/></p>
-    <p><input type="submit" value="上传"/></p>
-</form>-->
-
-<script src="js/login.js" type="text/javascript"></script>
-<script src="angularjs/angular.js" type="text/javascript"></script>
-<script src="angularjs/angular.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    document.write("<script src='angularjs/angular.js?ver="+Math.random()+"'><\/script>");
+    document.write("<script src='js/login.js?ver="+Math.random()+"'><\/script>");
+</script>
 
 </body>
 </html>

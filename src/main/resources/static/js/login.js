@@ -1,7 +1,10 @@
-angular.module('login',[]).
-controller('loignController', ["$http", "$scope", "$filter", "$state", "ngTableParams", "$aside",
+// var angular=angular.module('login',[]);
+var app = angular.module('login', []);
+app.controller('loignController', ["$http", "$scope",
+    "$filter", "$state", "ngTableParams", "$aside",
     "SweetAlert", "toaster", "cfpLoadingBar", "paramService", "$utils", "$modal",
-    function ($http, $scope, $filter, $state, ngTableParams, $aside, SweetAlert, toaster, cfpLoadingBar, paramService, utils, $modal) {
+    function ($http, $scope, $filter, $state, ngTableParams, $aside, SweetAlert, toaster,
+              cfpLoadingBar, paramService, utils, $modal) {
         $scope.params = {};
         $scope.returnDat;//登陆返回的数据
         $scope.data = [];
