@@ -28,9 +28,9 @@ public class Application extends SpringBootServletInitializer {
 
 
 
-/*    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Application.class);
-    }*/
+    }
 
 /*    @Bean
     public CorsFilter corsFilter() {

@@ -1,5 +1,5 @@
 angular.module('login',[]).
-controller('spotCheckConfigListCtrl', ["$http", "$scope", "$filter", "$state", "ngTableParams", "$aside",
+controller('loignController', ["$http", "$scope", "$filter", "$state", "ngTableParams", "$aside",
     "SweetAlert", "toaster", "cfpLoadingBar", "paramService", "$utils", "$modal",
     function ($http, $scope, $filter, $state, ngTableParams, $aside, SweetAlert, toaster, cfpLoadingBar, paramService, utils, $modal) {
         $scope.params = {};
