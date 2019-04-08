@@ -32,12 +32,12 @@ public class Application extends SpringBootServletInitializer {
         return application.sources(Application.class);
     }
 
-/*    @Bean
+    @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", buildConfig()); // 4
         return new CorsFilter(source);
-    }*/
+    }
 
 
     private CorsConfiguration buildConfig() {
@@ -53,6 +53,7 @@ public class Application extends SpringBootServletInitializer {
         List<String> allowedHeaders = new ArrayList<String>();
         allowedHeaders.add("Content-Type");
         allowedHeaders.add("X-Requested-With");
+        allowedHeaders.add("Access-Control-Allow-Origin");
         allowedHeaders.add("accept");
         allowedHeaders.add("Origin");
         allowedHeaders.add("Access-Control-Request-Method");
